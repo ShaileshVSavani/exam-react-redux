@@ -48,6 +48,7 @@ export const updateStudent = (id, student) => async (dispatch) => {
 export const getStudents = () => async (dispatch) => {
   try {
     let students = await axios.get("http://localhost:3000/students");
+    console.log(students)
     dispatch({
       type: GET_STUDENT,
       payload: students.data,
