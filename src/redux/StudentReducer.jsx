@@ -2,7 +2,7 @@ import { ADD_STUDENT, DELETE_STUDENT, GET_STUDENT, UPDATE_STUDENT } from "./Acti
 
 const initialState ={
     students :[],
-    student :{}
+   
 }
 
 const StudentReducer = (state = initialState, {type , payload}) => {
